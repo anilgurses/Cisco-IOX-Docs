@@ -1,6 +1,6 @@
 # Cisco IOX App Development
  ## General Information
- Cisco IOX is an app deployment which is created by Cisco Systems. I am writing this document for who is suffering from problems when deploying apps on IOX. I may have some wrongs at the document.If you find one, please open an issue above.
+ Cisco IOX is an app deployment service which is created by Cisco Systems and used in cisco's specific industrial routers. I am writing this document for who is suffering from problems when deploying apps on IOX. I may have some wrongs at the document.If you find one, please open an issue above.
 ## Development Enviroment
 I have Cisco IR829 with 50Gb m2Sata Ssd. I developed *Docker* type apps and *VM* type apps. My current development is decribed below. This enviroment satisfies all the apps development proccess which is written in this repository.
 
@@ -49,7 +49,6 @@ I also added my package.yaml files to the repository. Package.yaml files are on 
 
 # IOS Base Configuration for IOX
 My running configuration is here. I removed my personal information such as passwords. I wrote *####Fill####* for you to fill the given blank for yourself. If you don't know the how to configure your IOS, please read [[this]] .
-
 
 
 # Troubleshooting
