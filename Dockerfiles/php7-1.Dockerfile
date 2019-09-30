@@ -39,12 +39,14 @@ RUN apk add -U \
     php7-redis \
     php7-fpm \
     php7-tokenizer \
+    php7-fileinfo \
 	# Clean up
     && rm -rf /var/cache/apk/*
 
 ### Enabling SSH 
 ### Equivalent of console access on the IOX
 
+## Required for console access on the IOXclient
 RUN apk --update add --no-cache openssh bash \
   && sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config \
   && echo "root:root" | chpasswd \
